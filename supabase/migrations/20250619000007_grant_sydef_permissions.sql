@@ -1,0 +1,37 @@
+-- Grant Supabase roles access to the sydef schema
+-- The anon and authenticated roles need USAGE on the schema + table-level grants
+-- RLS policies handle the actual access control
+
+GRANT USAGE ON SCHEMA sydef TO anon, authenticated, service_role;
+
+GRANT ALL ON ALL TABLES IN SCHEMA sydef TO service_role;
+GRANT SELECT, INSERT, UPDATE, DELETE ON ALL TABLES IN SCHEMA sydef TO authenticated;
+GRANT SELECT ON ALL TABLES IN SCHEMA sydef TO anon;
+
+GRANT ALL ON ALL FUNCTIONS IN SCHEMA sydef TO service_role;
+GRANT EXECUTE ON ALL FUNCTIONS IN SCHEMA sydef TO authenticated;
+GRANT EXECUTE ON ALL FUNCTIONS IN SCHEMA sydef TO anon;
+
+GRANT ALL ON ALL SEQUENCES IN SCHEMA sydef TO service_role;
+GRANT USAGE ON ALL SEQUENCES IN SCHEMA sydef TO authenticated;
+
+ALTER DEFAULT PRIVILEGES IN SCHEMA sydef
+  GRANT SELECT ON TABLES TO anon;
+
+ALTER DEFAULT PRIVILEGES IN SCHEMA sydef
+  GRANT SELECT, INSERT, UPDATE, DELETE ON TABLES TO authenticated;
+
+ALTER DEFAULT PRIVILEGES IN SCHEMA sydef
+  GRANT ALL ON TABLES TO service_role;
+
+ALTER DEFAULT PRIVILEGES IN SCHEMA sydef
+  GRANT EXECUTE ON FUNCTIONS TO authenticated;
+
+ALTER DEFAULT PRIVILEGES IN SCHEMA sydef
+  GRANT EXECUTE ON FUNCTIONS TO anon;
+
+ALTER DEFAULT PRIVILEGES IN SCHEMA sydef
+  GRANT ALL ON FUNCTIONS TO service_role;
+
+ALTER DEFAULT PRIVILEGES IN SCHEMA sydef
+  GRANT USAGE ON SEQUENCES TO authenticated;

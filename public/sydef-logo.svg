@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Sydef logo">
+  <defs>
+    <linearGradient id="head" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="35%" stop-color="#8b5cf6"/>
+      <stop offset="70%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+  </defs>
+  <path d="M60 18 C38 18 22 38 22 58 C22 82 38 98 60 102 C82 98 98 82 98 58 C98 38 82 18 60 18 Z" fill="url(#head)"/>
+  <ellipse cx="48" cy="54" rx="6" ry="8" fill="#fff"/>
+  <ellipse cx="72" cy="54" rx="6" ry="8" fill="#fff"/>
+  <circle cx="48" cy="55" r="3" fill="#0f766e"/>
+  <circle cx="72" cy="55" r="3" fill="#7c3aed"/>
+  <path d="M48 72 Q60 80 72 72" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+</svg>

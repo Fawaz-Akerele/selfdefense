@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ecfdf5"/>
+      <stop offset="28%" stop-color="#fefce8"/>
+      <stop offset="55%" stop-color="#7c2d12"/>
+      <stop offset="78%" stop-color="#581c87"/>
+      <stop offset="100%" stop-color="#0f766e"/>
+    </linearGradient>
+    <linearGradient id="lightZone" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fffef7" stop-opacity="0.97"/>
+      <stop offset="45%" stop-color="#ecfdf5" stop-opacity="0.88"/>
+      <stop offset="70%" stop-color="#ecfdf5" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#ecfdf5" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="72%" cy="42%" r="45%">
+      <stop offset="0%" stop-color="#fbbf24" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+  <rect width="1920" height="1080" fill="url(#glow)"/>
+  <!-- Abstract threat + awareness shapes (right side) -->
+  <g opacity="0.5">
+    <polygon points="1200,120 1380,80 1320,260" fill="#fb7185"/>
+    <polygon points="1500,200 1720,160 1650,340" fill="#c026d3"/>
+    <polygon points="1100,680 1280,620 1180,820" fill="#be123c"/>
+    <polygon points="1600,760 1800,700 1750,920" fill="#f97316"/>
+  </g>
+  <g fill="none" stroke="#fef08a" stroke-opacity="0.35">
+    <circle cx="1350" cy="480" r="80" stroke-width="2"/>
+    <circle cx="1350" cy="480" r="140" stroke-width="1.5"/>
+    <circle cx="1350" cy="480" r="210" stroke-width="1"/>
+    <circle cx="1350" cy="480" r="290" stroke-width="0.8"/>
+  </g>
+  <g transform="translate(1350 480)">
+    <path d="M0 -100 L 82 -30 L 50 90 L 0 125 L -50 90 L -82 -30 Z" fill="#14b8a6" fill-opacity="0.35" stroke="#5eead4" stroke-width="2"/>
+    <circle r="45" fill="#fbbf24" fill-opacity="0.5"/>
+    <circle r="18" fill="#fffbeb"/>
+  </g>
+  <g stroke="#fde68a" stroke-width="2" stroke-opacity="0.4" fill="none">
+    <path d="M1350 480 L1180 320"/>
+    <path d="M1350 480 L1520 300"/>
+    <path d="M1350 480 L1140 620"/>
+    <path d="M1350 480 L1580 640"/>
+  </g>
+  <!-- Light text-safe zone (left) -->
+  <rect width="960" height="1080" fill="url(#lightZone)"/>
+</svg>
